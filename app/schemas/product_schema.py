@@ -12,3 +12,8 @@ class ProductCreate(ProductBase):
 
 class ProductRead(ProductBase):
     id: int
+
+class ProductUpdate(SQLModel):
+    name: Optional[str] = None
+    description: Optional[str] = None
+    price: Optional[float] = Field(default=None, gt=0)

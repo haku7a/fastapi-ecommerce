@@ -1,1 +1,1 @@
-from .product_schema import ProductBase, ProductCreate, ProductRead
+from .product_schema import ProductBase, ProductCreate, ProductRead, ProductUpdate
